@@ -41,16 +41,15 @@ The system employs 5 specialized agents working in coordinated sequence:
 ```json
 {
   "query": "I have an 800m² lot in Stuttgart-Mitte zoned as WA (general residential area). What's the maximum building coverage ratio and how many stories can I build?"
-}'''
+}
+Output Highlights:
 
-**Output Highlights:**
-
--Maximum building coverage ratio: 0.4 (320m² footprint)
--Maximum stories: 3 full stories
--Legal citations: BauGB §19, LBO BW §17(2), BauNVO §19(2)
--Technical requirements: DIN 18040 (accessibility), DIN 4109 (sound insulation), DIN 4102 (fire safety)
--Timeline estimate: 6-9 months for permits and approvals
--Cost analysis with compliance multipliers
+Maximum building coverage ratio: 0.4 (320m² footprint)
+Maximum stories: 3 full stories
+Legal citations: BauGB §19, LBO BW §17(2), BauNVO §19(2)
+Technical requirements: DIN 18040 (accessibility), DIN 4109 (sound insulation), DIN 4102 (fire safety)
+Timeline estimate: 6-9 months for permits and approvals
+Cost analysis with compliance multipliers
 
 🛠️ Technical Stack
 Backend Framework:
@@ -88,7 +87,7 @@ cd stuttgart-building-regulations-ai
 pip install -r requirements.txt
 
 # Set environment variables
-export GROQ_API_KEY="your-groq-api-key-here"
+export OPENAI_API_KEY="your-openai-api-key-here"
 
 # Run application
 uvicorn multi_agent_app:app --reload --port 8000
@@ -138,3 +137,4 @@ Project Issues: GitHub Issues
 MIT License - See LICENSE file for details.
 
 Built with: CrewAI • FastAPI • OpenAI • Railway • Python
+'''
